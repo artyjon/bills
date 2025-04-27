@@ -1,4 +1,4 @@
-package org.markproject.bills;
+package org.markproject.bills.dto;
 
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleDoubleProperty;
@@ -33,10 +33,6 @@ public class HistoryRecord {
         return month.get();
     }
 
-    public StringProperty monthProperty() {
-        return month;
-    }
-
     public String getLocalizedMonth() {
         try {
             Month parsedMonth = Month.valueOf(month.get().toUpperCase());
@@ -47,49 +43,31 @@ public class HistoryRecord {
         }
     }
 
-    public double getColdWater() {
-        return coldWater.get();
-    }
 
     public DoubleProperty coldWaterProperty() {
         return coldWater;
     }
 
-    public double getHotWater() {
-        return hotWater.get();
-    }
 
     public DoubleProperty hotWaterProperty() {
         return hotWater;
     }
 
-    public double getSewer() {
-        return sewer.get();
-    }
 
     public DoubleProperty sewerProperty() {
         return sewer;
     }
 
-    public double getElectricityDay() {
-        return electricityDay.get();
-    }
 
     public DoubleProperty electricityDayProperty() {
         return electricityDay;
     }
 
-    public double getElectricityNight() {
-        return electricityNight.get();
-    }
 
     public DoubleProperty electricityNightProperty() {
         return electricityNight;
     }
 
-    public double getTotal() {
-        return total.get();
-    }
 
     public DoubleProperty totalProperty() {
         return total;
