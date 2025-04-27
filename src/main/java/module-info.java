@@ -6,6 +6,7 @@ module org.markproject.bills {
     requires javafx.graphics;
     requires java.sql;
     requires org.slf4j;
+    requires javafx.swing; // Добавьте, если используется JFXPanel
 
     opens org.markproject.bills to javafx.fxml;
     opens org.markproject.bills.controllers to javafx.fxml;

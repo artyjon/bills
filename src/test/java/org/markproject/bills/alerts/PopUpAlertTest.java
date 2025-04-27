@@ -21,8 +21,8 @@ class PopUpAlertTest {
 
     @BeforeAll
     static void initToolkit() {
-        // Инициализация JavaFX Toolkit для тестов
         new JFXPanel();
+        // Инициализация JavaFX Toolkit для тестов
     }
 
     @BeforeEach

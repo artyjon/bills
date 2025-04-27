@@ -39,6 +39,11 @@
             <artifactId>javafx-web</artifactId>
             <version>${javafx.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-swing</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
 
         <!-- Дополнительные библиотеки -->
         <dependency>
@@ -157,8 +162,7 @@
                         --add-opens javafx.graphics/com.sun.javafx.application=ALL-UNNAMED
                         --add-exports javafx.graphics/com.sun.glass=ALL-UNNAMED
                         --add-opens javafx.controls/javafx.scene.control=ALL-UNNAMED
-                        --add-opens javafx.graphics/com.sun.glass.ui=ALL-UNNAMED
-                        --add-opens javafx.base/com.sun.javafx.logging=ALL-UNNAMED
+                        --add-opens javafx.graphics/com.sun.javafx.embed=ALL-UNNAMED
                     </argLine>
                 </configuration>
             </plugin>
