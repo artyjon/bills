@@ -13,4 +13,5 @@ module org.markproject.bills {
 
     exports org.markproject.bills;
     exports org.markproject.bills.controllers;
+    exports org.markproject.bills.alerts;
 }
